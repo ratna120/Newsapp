@@ -35,7 +35,7 @@ class News extends Component {
   updateNews = async (page) => {
     this.setState({ loading: true, error: null });
 
-    const url = `https://newsapi.org/v2/top-headlines?country=us&category=general&apiKey=3fa5fbcda42a4c2ab4893ee078a7e873&page=${page}&pageSize=${this.props.pageSize}`;
+    const url = `https://newsapi.org/v2/top-headlines?country=us&category=general&apiKey=1a62c794dbdb359ba2c1963375be9954&page=${page}&pageSize=${this.props.pageSize}`;
 
     try {
       let response = await fetch(url);
